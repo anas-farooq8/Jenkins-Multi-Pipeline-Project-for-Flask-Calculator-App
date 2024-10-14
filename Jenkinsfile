@@ -25,6 +25,7 @@ pipeline {
                     if ! which python3 > /dev/null 2>&1; then
                         apt-get update
                         apt-get install -y python3 python3-pip
+                        apt-get install -y docker.io
                         apt install -y python3-pytest
                         apt install -y python3-flask
                     else
